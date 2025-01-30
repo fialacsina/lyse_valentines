@@ -95,6 +95,7 @@ body {
     background-color: #ff4081;
     transform: rotate(-45deg);
     animation: fall 4s ease-in infinite;
+    z-index: 1000; /* Ensuring petals appear on top */
 }
 
 .petal::before, .petal::after {
@@ -169,16 +170,16 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .front_card, .inside_card {
-        width: 80%; /* Adjusted for a better card fit */
+        width: 85%; /* Adjusted for a better card fit */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 85%; /* Adjusted image width */
+        width: 90%; /* Adjusted image width */
     }
 
     .valentines_card {
-        width: 90%; /* Card width adjusted for medium screens */
+        width: 80%; /* Card width adjusted for medium screens */
     }
 
     .front_text, .inside_text {
