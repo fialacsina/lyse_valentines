@@ -1,26 +1,34 @@
+<link rel="stylesheet" href="styles.css">
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A little message</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<html>
+    <head>
+        <title>A little message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js"></script>
+    </head>
+    <body>
+        <div class="falling-petals">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+        
+        </div>
+        
     <div class="valentines_card">
         <div class="front_card">
             <img src="hello.png" class="front_img">
             <div class="front_text">
-                <h3>A special delivery for Lyse</h3>
+            <h3>A special delivery for Lyse</h3>
             </div>    
         </div>
         <div class="inside_card">
             <img src="cinna.png" class="inside_img">
             <div>
                 <audio id="loveAudio" controls>
-                    <source src="UnconditionalLove.mp3" type="audio/mp3">
-                </audio>  
+                    <source src="LovedbyYou.mp3" type="audio/mp3">
+                  </audio>  
             </div>
             <div class="inside_text">
                 <h4>To be loved by you is one of life's sweetest treasures, and loving you is my greatest joy.</h4>
@@ -29,5 +37,5 @@
         </div>
     </div>
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
