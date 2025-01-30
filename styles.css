@@ -88,18 +88,6 @@ body {
     }
 }
 
-.falling-petals {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* So petals don't interfere with other interactions */
-    overflow: hidden;
-    z-index: 1000; /* Ensuring petals appear on top */
-    background: rgba(255, 255, 255, 0.1); /* Temporary background for visibility */
-}
-
 .petal {
     position: absolute;
     width: 10px;
@@ -107,7 +95,6 @@ body {
     background-color: #ff4081;
     transform: rotate(-45deg);
     animation: fall 4s ease-in infinite;
-    z-index: 9999; /* Ensure petals are on top */
 }
 
 .petal::before, .petal::after {
@@ -182,16 +169,16 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .front_card, .inside_card {
-        width: 85%; /* Adjusted for a better card fit */
+        width: 80%; /* Adjusted for a better card fit */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 90%; /* Adjusted image width */
+        width: 85%; /* Adjusted image width */
     }
 
     .valentines_card {
-        width: 80%; /* Card width adjusted for medium screens */
+        width: 90%; /* Card width adjusted for medium screens */
     }
 
     .front_text, .inside_text {
