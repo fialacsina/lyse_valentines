@@ -20,7 +20,7 @@ body {
 }
 
 .front_img, .inside_img {
-    width: 300px; /* Reduced from 450px */
+    width: 250px; /* Reduced from 300px */
     margin: 0 auto;
     position: relative;
     border-radius: 12px;
@@ -30,7 +30,7 @@ body {
 .front_text, .inside_text {
     color: #A60657;
     font-family: 'Playfair Display', serif;
-    font-size: 18px; /* Reduced from 24px */
+    font-size: 14px; /* Reduced from 18px */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -39,13 +39,13 @@ body {
     overflow: hidden;
     transform-origin: left;
     margin: 20px auto;
-    padding: 16px;
+    padding: 10px;
     background-color: #f8d9e1;
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
-    width: 300px; /* Reduced from 450px */
-    height: 500px; /* Reduced from 700px */
-    border-radius: 15px;
+    width: 250px; /* Reduced from 300px */
+    height: 400px; /* Reduced from 500px */
+    border-radius: 12px;
 }
 
 .inside_card {
@@ -53,16 +53,16 @@ body {
     overflow: hidden;
     transform-origin: left;
     margin: 20px auto;
-    padding: 16px;
+    padding: 10px;
     background-color: #f8d9e1;
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
-    width: 300px; /* Reduced from 450px */
-    height: 500px; /* Reduced from 700px */
+    width: 250px; /* Reduced from 300px */
+    height: 400px; /* Reduced from 500px */
     z-index: -1;
     left: 0;
     top: 0;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .valentines_card:hover .front_card {
@@ -104,8 +104,8 @@ body {
 
 .petal {
     position: absolute;
-    width: 15px; /* Reduced from 20px */
-    height: 15px; /* Reduced from 20px */
+    width: 10px; /* Reduced from 15px */
+    height: 10px; /* Reduced from 15px */
     background-color: #ff4081;
     transform: rotate(-45deg);
     animation: fall 4s ease-in infinite;
@@ -114,19 +114,19 @@ body {
 .petal::before, .petal::after {
     content: '';
     position: absolute;
-    width: 15px; /* Reduced from 20px */
-    height: 15px; /* Reduced from 20px */
+    width: 10px; /* Reduced from 15px */
+    height: 10px; /* Reduced from 15px */
     background-color: #ff4081;
     border-radius: 50%;
 }
 
 .petal::before {
     left: 0;
-    top: -7px;
+    top: -5px;
 }
 
 .petal::after {
-    left: 7px;
+    left: 5px;
     top: 0;
 }
 
@@ -183,40 +183,40 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .front_card, .inside_card {
-        width: 70%; /* Reduced from 80% */
+        width: 60%; /* Reduced from 70% */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 80%; /* Reduced from 100% */
+        width: 70%; /* Reduced from 80% */
         height: auto;
     }
 
     .front_text, .inside_text {
-        font-size: 16px; /* Reduced from 18px */
+        font-size: 12px; /* Reduced from 14px */
     }
 
     .valentines_card {
-        width: 75%; /* Reduced from 80% */
+        width: 60%; /* Reduced from 75% */
     }
 }
 
 @media screen and (max-width: 480px) {
     .front_card, .inside_card {
-        width: 85%; /* Reduced from 90% */
+        width: 80%; /* Reduced from 85% */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 90%; /* Reduced from 100% */
+        width: 85%; /* Reduced from 90% */
         height: auto;
     }
 
     .front_text, .inside_text {
-        font-size: 14px; /* Reduced from 16px */
+        font-size: 10px; /* Reduced from 12px */
     }
 
     .valentines_card {
-        width: 85%; /* Reduced from 90% */
+        width: 80%; /* Reduced from 85% */
     }
 }
