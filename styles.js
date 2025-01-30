@@ -1,7 +1,7 @@
 const petalContainer = document.querySelector('.falling-petals');
 
-// Create 50 random petals
-for (let i = 0; i < 50; i++) {
+// Create 100 random petals
+for (let i = 0; i < 100; i++) {
     const petal = document.createElement('div');
     petal.classList.add('petal');
     petal.style.animationDuration = `${Math.random() * 5 + 4}s`; // Randomize duration between 4 and 9 seconds
