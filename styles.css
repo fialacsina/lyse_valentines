@@ -21,7 +21,7 @@ body {
 }
 
 .front_img, .inside_img {
-    width: 230px;
+    width: 230px; /* Adjusted size for images */
     margin: 0 auto;
     position: relative;
     border-radius: 12px;
@@ -35,7 +35,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.front_card {
+.front_card, .inside_card {
     position: relative;
     overflow: hidden;
     transform-origin: left;
@@ -46,23 +46,6 @@ body {
     box-shadow: 0 24px 40px -8px #ff1493;
     width: 230px;
     height: 400px;
-    border-radius: 12px;
-}
-
-.inside_card {
-    position: absolute;
-    overflow: hidden;
-    transform-origin: left;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #f8d9e1;
-    text-align: center;
-    box-shadow: 0 24px 40px -8px #ff1493;
-    width: 230px;
-    height: 400px;
-    z-index: -1;
-    left: 0;
-    top: 0;
     border-radius: 12px;
 }
 
@@ -82,7 +65,7 @@ body {
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
-    width: 85%; 
+    width: 100%; /* Ensured the music player has proper width on desktop */
 }
 
 .valentines_card audio {
@@ -93,6 +76,7 @@ body {
     display: block;
 }
 
+/* For petals falling animation */
 @keyframes fall {
     0% {
         transform: translateY(-100px) rotate(0deg);
@@ -185,40 +169,38 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .front_card, .inside_card {
-        width: 65%; /* Slightly larger on medium screens */
+        width: 80%; /* Adjusted for a better card fit */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 75%; /* Adjusted width */
-        height: auto;
+        width: 85%; /* Adjusted image width */
+    }
+
+    .valentines_card {
+        width: 90%; /* Card width adjusted for medium screens */
     }
 
     .front_text, .inside_text {
         font-size: 12px;
     }
-
-    .valentines_card {
-        width: 70%; /* Larger card on tablet-size screens */
-    }
 }
 
 @media screen and (max-width: 480px) {
     .front_card, .inside_card {
-        width: 80%; /* Larger card on smaller screens */
+        width: 90%; /* Slightly larger card on smaller screens */
         height: auto;
     }
 
     .front_img, .inside_img {
-        width: 85%; /* Adjusted image size */
-        height: auto;
+        width: 100%; /* Adjusted image width */
+    }
+
+    .valentines_card {
+        width: 95%; /* Slightly smaller but appropriate on mobile */
     }
 
     .front_text, .inside_text {
         font-size: 10px;
-    }
-
-    .valentines_card {
-        width: 85%; /* Slightly smaller but still appropriate */
     }
 }
