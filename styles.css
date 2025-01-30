@@ -97,6 +97,7 @@ body {
     pointer-events: none; /* So petals don't interfere with other interactions */
     overflow: hidden;
     z-index: 1000; /* Ensuring petals appear on top */
+    background: rgba(255, 255, 255, 0.1); /* Temporary background for visibility */
 }
 
 .petal {
@@ -106,7 +107,7 @@ body {
     background-color: #ff4081;
     transform: rotate(-45deg);
     animation: fall 4s ease-in infinite;
-    z-index: 1000; /* Ensuring petals appear on top */
+    z-index: 9999; /* Ensure petals are on top */
 }
 
 .petal::before, .petal::after {
