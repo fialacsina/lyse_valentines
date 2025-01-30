@@ -17,6 +17,7 @@ body {
     transform-style: preserve-3d;
     transform: perspective(2500px);
     transition: 1.5s ease-in-out;
+    width: 90%;
 }
 
 .front_img, .inside_img {
@@ -179,4 +180,18 @@ body {
 .petal:nth-child(10) {
     left: 100%;
     animation-duration: 6s;
+}
+
+@media (max-width: 768px) {
+    .front_card, .inside_card {
+        width: 80%;  /* Reduce width on smaller screens */
+        height: auto; /* Adjust height accordingly */
+    }
+}
+
+@media (min-width: 1024px) {
+    .front_card, .inside_card {
+        width: 500px; /* Adjust size for larger screens */
+        height: 750px;
+    }
 }
